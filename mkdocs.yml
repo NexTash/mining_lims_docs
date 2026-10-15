@@ -1,0 +1,86 @@
+site_name: NexTash Product Documentation
+site_url: https://nextash.github.io/mining_lims_docs/
+repo_url: https://github.com/NexTash/mining_lims_docs
+edit_uri: edit/main/docs/
+copyright: NexTash
+
+theme:
+  name: material
+  language: en
+  features:
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - content.action.edit
+    - toc.follow
+  palette:
+    - scheme: default
+      primary: blue grey
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Dark mode
+    - scheme: slate
+      primary: blue grey
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Light mode
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+plugins:
+  - search
+
+nav:
+  - Home: index.md
+  - Mining LIMS:
+      - Introduction: mining-lims/index.md
+      - Getting started:
+          - Login and navigation: mining-lims/getting-started/login-and-navigation.md
+          - Initial setup checklist: mining-lims/getting-started/initial-setup.md
+      - The process step by step:
+          - Overview: mining-lims/process/overview.md
+          - 1. Creating a request: mining-lims/process/01-request.md
+          - 2. Price and invoice: mining-lims/process/02-pricing-and-invoice.md
+          - 3. Payment: mining-lims/process/03-payment.md
+          - 4. Receiving samples: mining-lims/process/04-sample-receipt.md
+          - 5. Preparing specimens: mining-lims/process/05-sample-preparation.md
+          - 6. Testing and the data sheet: mining-lims/process/06-testing.md
+          - 7. Review and approval: mining-lims/process/07-review-and-approval.md
+          - 8. Reports and the customer portal: mining-lims/process/08-reports-and-portal.md
+          - 9. Storage and disposal: mining-lims/process/09-storage-and-disposal.md
+      - Forms reference:
+          - Customer: mining-lims/modules/customer.md
+          - Contract: mining-lims/modules/contract.md
+          - Request: mining-lims/modules/request.md
+          - Invoice: mining-lims/modules/invoice.md
+          - Sample: mining-lims/modules/sample.md
+          - Observation Data Sheet: mining-lims/modules/observation-data-sheet.md
+          - Test: mining-lims/modules/test.md
+          - Test Method (data sheet designer): mining-lims/modules/test-method.md
+          - Parameter: mining-lims/modules/parameter.md
+          - Standard: mining-lims/modules/standard.md
+          - Equipment: mining-lims/modules/equipment.md
+          - Storage Location: mining-lims/modules/storage-location.md
+          - Users and signatures: mining-lims/modules/users-and-signatures.md
+          - Settings: mining-lims/modules/settings.md
+      - Reports and dashboard: mining-lims/reports-and-dashboard.md
+      - E-mail notifications: mining-lims/notifications.md
+      - Roles and permissions: mining-lims/roles-and-permissions.md
+      - FAQ: mining-lims/faq.md
+      - Glossary: mining-lims/glossary.md
