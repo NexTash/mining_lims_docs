@@ -33,12 +33,14 @@ Customers who have a portal login (see [Customer](../modules/customer.md)) sign 
 their e-mail address and see the **laboratory portal**:
 
 - their **requests** with status;
+- their **invoices** with amount, due date and payment status, each with a **Download PDF**
+  link (the same invoice that was e-mailed);
 - the **samples** of each request with their current status (Waiting, Received, Tested,
   Approved ...), without laboratory-internal details;
 - a **Download report** link for every approved sample, giving the report the Head of
   Laboratory chose for them.
 
-Customers cannot see prices other than on their invoice, cannot see other customers' data
+Customers cannot see prices other than on their invoices, cannot see other customers' data
 and cannot change anything. There is no public report page; everything requires a login.
 
 Next: [Storage and disposal](09-storage-and-disposal.md).

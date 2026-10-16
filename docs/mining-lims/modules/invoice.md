@@ -3,7 +3,8 @@
 **Purpose:** the bill for a request. Created automatically when the Head of Laboratory sets
 the final price; never typed by hand.
 
-**Who:** Head of Laboratory and Director of Centre only. Invoices have their own list under
+**Who:** Head of Laboratory and Director of Centre in the LIMS; the customer receives it by
+e-mail and sees its own invoices in the customer portal. Invoices have their own list under
 **Operations > Invoices**.
 
 **Statuses:** Pending (sent, awaiting payment) → Paid (set when the request is marked
@@ -13,7 +14,7 @@ Paid) or Cancelled.
 
 | Field | Meaning |
 | --- | --- |
-| Request, Customer, Customer E-mail | Copied from the request. |
+| Request, Customer, Customer E-mail | Copied from the request. If the request has no contact e-mail, the customer's primary contact or portal login is used. |
 | Invoice Date, Due Date | Issue date and payment term. |
 | Items | One line per test on the request: Description (the test name as worded on the request), Samples, Rate, Amount. |
 | Total, Currency | Invoice total. |

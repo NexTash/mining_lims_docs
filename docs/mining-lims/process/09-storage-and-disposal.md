@@ -22,5 +22,6 @@ Remarks** and save. The date and your name are recorded.
 ## Custody log
 
 Every hand-over is listed in the **Custody Log**: receipt from the customer, preparation,
-splitting into pieces, preparation failure, storage. The **Chain of Custody** print shows
-the log with the signatures.
+splitting into pieces, preparation failure, storage. The log is written by the system and
+cannot be edited or deleted by anyone. The **Chain of Custody** print shows the log with
+the signatures.

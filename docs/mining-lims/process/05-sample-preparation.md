@@ -1,7 +1,7 @@
 # 5. Preparing specimens
 
-**Who:** Technician. **Result:** Sample **Prepared** (one specimen) or several **pieces**,
-each **Prepared** with its own data sheet.
+**Who:** Technician. **Result:** Sample **Prepared** (one specimen), or several **pieces**
+that are each received, prepared and tested on their own.
 
 Preparation turns the delivered material into test specimens: sawing and end-grinding a
 core, trimming a soil sample, coring. Record it on the **Processing** tab of the Received
@@ -23,17 +23,26 @@ start.
 
 ## Several specimens: Split into Pieces
 
-If one delivered core gives several test specimens, click **Split into Pieces**:
+If one delivered core gives several test specimens, click **Split into Pieces** on the
+Received sample (Technician only):
 
 1. Enter the **number of pieces** and, optionally, their **specimen codes** (one per line,
    for example UCS-0005, UCS-0006) and the nominal **diameter** and **height**.
-2. Confirm. The system creates one child sample per piece with status **Prepared**, its own
-   number and code, its own data sheet and its own QR label. The pieces are listed on the
-   parent sample; **View > Parent Sample** on a piece goes back.
+2. Confirm. The system creates one child sample per piece with status **Received**, its own
+   number and code and its own QR label. The pieces are listed on the parent sample;
+   **View > Parent Sample** on a piece goes back.
+3. Open each piece, record its preparation on the **Processing** tab and use
+   **Actions > Mark Prepared**. The piece becomes **Prepared** and its data sheet is created.
+   If a piece breaks, use **Preparation Failed** on that piece only.
 
 Print the labels of the pieces (**Print > Sample Label (QR)** on each piece) and attach
-them. The parent sample moves on with its pieces: it is approved when every piece has been
-approved.
+them.
+
+Each piece has its own workflow from here on: it is prepared, tested, reviewed and approved
+on its own. The parent sample has no actions of its own any more; it follows its pieces and
+always shows the least advanced stage among them. It becomes **Prepared** when every piece is
+prepared, **Tested** when every piece is tested, and **Approved** when every piece has been
+approved. If one piece is sent back, the parent steps back with it.
 
 ## When preparation fails
 

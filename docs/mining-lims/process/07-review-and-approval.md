@@ -34,8 +34,8 @@ the sheet again and the sample comes back as **Tested**.
    **Reports > Detailed Report** or **Brief Report**.
 2. **Actions > Approve.** The sample is **Approved**; your signature and the approval date
    go on the report; the customer receives the chosen report as a PDF by e-mail and can
-   download it from the portal. A parent sample is approved automatically when all its
-   pieces are approved.
+   download it from the portal. A split sample is approved automatically when all its
+   pieces are approved; it has no Approve action of its own.
 
 To send it back, write a **Director Note** (mandatory) and use **Actions > Reject**. The
 sample becomes **Review Rejected** and the Head of Laboratory is notified. The Head then

@@ -31,8 +31,10 @@ recorded and a *Received* line is added to the custody log. Now print:
 
 If the sample cannot be tested (wrong material, broken core, insufficient quantity):
 
-1. On the **Receiving** tab fill in **Rejection Note** and attach a **Rejection Photo**.
-   Both are mandatory; the system refuses the rejection without them.
+1. On the **Receiving** tab fill in **Rejection Note** and attach a **Rejection Photo**,
+   then **Save**. Both are mandatory; **Reject Sample** is always offered in the Actions
+   menu, but the system refuses the rejection and tells you what is missing until both are
+   there.
 2. **Actions > Reject Sample.** The sample becomes **Sample Rejected**. The customer
    receives an e-mail with the reason and is asked to send another sample; the Head of
    Laboratory receives a copy.

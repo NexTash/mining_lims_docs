@@ -41,7 +41,7 @@ Director approves. The Customer sees only the status of their samples in the por
 
 | Field | Meaning |
 | --- | --- |
-| Prepared On, Prepared By | Set when the sample is marked prepared or split. |
+| Prepared On, Prepared By | Set when the sample is marked prepared (for a split sample: when its last piece is). |
 | Preparation Method | Sawing, End Facing, Lapping / Grinding, Coring, Trimming, Wet Preparation. |
 | Nominal Diameter, Nominal Height | Target dimensions of the specimen; pre-filled on the data sheet. |
 | Preparation Notes | Free text. |
@@ -68,11 +68,12 @@ Director approves. The Customer sees only the status of their samples in the por
 | Storage Location, Stored On | Where the material is kept. |
 | Retention Days, Discard Due | Retention period (from the Test or Settings) and the resulting due date. |
 | Discard Method, Discard Remarks, Discarded On, Discarded By | What was done with the material when the retention ended. |
-| Custody Log | Every hand-over with time, people and condition. |
+| Custody Log | Every hand-over with time, people and condition. Written by the system; cannot be edited. |
 
 ## Buttons
 
-- **Split into Pieces** (Received or Prepared, not on a piece).
+- **Split into Pieces** (Technician; on a Received sample, not on a piece). Each piece is
+  created Received and has its own workflow; the parent follows its pieces.
 - **Print**: Sample Label (QR), Sample Receipt Form, Chain of Custody.
 - **Reports** (from Tested): Internal, Detailed, Brief.
 - **View**: Request, Observation Data Sheets, Parent Sample.
